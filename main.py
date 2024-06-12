@@ -5,7 +5,7 @@ import os
 st.title("Cost Management June 2024")
 st.write("#### Page to download templates and upload back the Project's forecast")
 
-Tunnels_file = r"C:\Users\marcelo.defranceschi\OneDrive - Lower Thames Crossing\Attachments\T&A - Month end\24.06 JUN24\New_Pillar_Tunnels.xlsx"
+Tunnels_file = r"C:\Users\marcelo.defranceschi\OneDrive - Lower Thames Crossing\02 May Reports\Pillar based cost data sheet May-24 WD3 Rev02 preER - FINAL.xlsx"
 
 
 with open(Tunnels_file, "rb") as file:
@@ -15,19 +15,6 @@ with open(Tunnels_file, "rb") as file:
             file_name="Tunnels.xlsx",
                       )
 
-with open(Tunnels_file, "rb") as file:
-    btn = st.download_button(
-            label="Download Roads North file",
-            data=file,
-            file_name="Tunnels.xlsx",
-                      )
-
-with open(Tunnels_file, "rb") as file:
-    btn = st.download_button(
-            label="Download Kent Roads file",
-            data=file,
-            file_name="Tunnels.xlsx",
-                      )
 
 
 
