@@ -1,22 +1,21 @@
 import streamlit as st
 import os
+import pandas as pd
 
 
 st.title("Cost Management June 2024")
 st.write("#### Page to download templates and upload back the Project's forecast")
 
-Tunnels_file = r"C:\Users\marcelo.defranceschi\OneDrive - Lower Thames Crossing\02 May Reports\Pillar based cost data sheet May-24 WD3 Rev02 preER - FINAL.xlsx"
+Tunnels_file = r"C:\Users\marcelo.defranceschi\OneDrive - Lower Thames Crossing\02 May Reports\Pillar based cost data sheet May-24 WD3 Rev01.xlsx"
 
-
-with open(Tunnels_file, "rb") as file:
-    btn = st.download_button(
+with open(Tunnels_file, 'rb') as file:
+    st.download_button(
             label="Download Tunnels file",
             data=file,
-            file_name="Tunnels.xlsx",
+            file_name="Pillar based cost data sheet May-24 WD3 Rev01.xlsx",
+            type="primary",
+            mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
                       )
-
-
-
 
 
 # Define the target directory path
