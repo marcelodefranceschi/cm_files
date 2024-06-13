@@ -1,12 +1,14 @@
 import streamlit as st
 import os
 import pandas as pd
+import subprocess
 
 
 st.title("Cost Management June 2024")
 st.write("#### Page to download templates and upload back the Project's forecast")
 
-Tunnels_file = r"C:\Users\marcelo.defranceschi\OneDrive - Mace\Desktop\Projetos Python\cm_venv\New_Pillar_Tunnels.xlsx"
+Tunnels_file = "New_Pillar_Tunnels.xlsx"
+
 
 with open(Tunnels_file, 'rb') as file:
     st.download_button(
@@ -16,6 +18,7 @@ with open(Tunnels_file, 'rb') as file:
             type="primary",
             mime='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
                       )
+
 
 
 # Define the target directory path
@@ -37,6 +40,8 @@ if uploaded_files:
             f.write(file.read())
         # Print a success message
         st.success(f"{file_name} was successfully uploaded. THANK YOU!")
+
+
 
 
 #python -m streamlit run main.py
