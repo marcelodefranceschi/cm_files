@@ -22,7 +22,7 @@ with open(Tunnels_file, 'rb') as file:
 
 
 # Define the target directory path
-target_directory = r"C:\Users\marcelo.defranceschi\OneDrive - Lower Thames Crossing\02 May Reports"
+target_directory = r'https://lowerthamescrossing.sharepoint.com/:f:/s/Prism/EnH7fNFeuhBPufQp6FVEyzEBm78NgVJw6jP9ptKEXy1S2A?e=0PXroU'
 
 # Create a Streamlit file uploader
 uploaded_files = st.file_uploader("Upload files", accept_multiple_files=True)
