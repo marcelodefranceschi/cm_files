@@ -49,9 +49,6 @@ if not check_password():
 
 
 # Main Streamlit app starts here
-st.title("Cost Management June 2024")
-st.write("#### Page to download templates and upload back the Project's forecast")
-
 Tunnels_file = "New_Pillar_Tunnels.xlsx"
 
 
