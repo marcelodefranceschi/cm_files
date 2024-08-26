@@ -4,6 +4,8 @@ import pandas as pd
 import subprocess
 import hmac
 
+st.title("Cost Management June 2024")
+st.write("#### Page to download templates and upload back the Project's forecast")
 
 def check_password():
     """Returns `True` if the user had a correct password."""
